@@ -1,0 +1,20 @@
+# https://travis-ci.org/trivago/Protector
+sudo: false
+os:
+  - linux
+language: python
+env:
+  global:
+    - MAIN_VERSION=2.7
+python:
+  - "2.7"
+  - "pypy"
+install:
+  - "pip install nose"
+  - "pip install ."
+script:
+  - python setup.py nosetests
+after_success:
+  # python-coveralls doesn't like coverage 4.0 (see https://github.com/z4r/python-coveralls/issues/39)
+  - if [[ $TRAVIS_PYTHON_VERSION == $MAIN_VERSION ]]; then pip install python-coveralls coverage==3.7.1; fi
+  - if [[ $TRAVIS_PYTHON_VERSION == $MAIN_VERSION ]]; then python setup.py nosetests --with-coverage && coveralls; fi

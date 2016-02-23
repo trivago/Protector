@@ -1,0 +1,9 @@
+list series
+list series /.*/
+list series *
+delete * from *
+delete bla from myseries
+drop series test
+select * from f
+select * from this
+select * from /everything/

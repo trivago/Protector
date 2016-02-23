@@ -1,0 +1,19 @@
+{
+  "connection": { "whitelist": ["0.0.0.0/0"] },
+  "servers": [
+    {
+      "port": 8086,
+      "routes": [
+        {
+          "path": "*",
+          "methods": ["GET"],
+          "handler": "frock-static",
+          "options": {
+            "file": "/config/response.json",
+            "contentType": "application/json"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# This docker-compose file provides the following setup:
+# Benchmark -> Protector -> Frock
+# This setup is useful to run benchmarks against Protector
+frock:
+  # A mock InfluxDB server built with frock
+  image: urbanairship/frock
+  volumes:
+    - ./contrib/frock:/config
+  command: frock
+  ports:
+   - 8086
+protector:
+  build: .
+  # Uncomment the following three lines for interactive mode:
+  # entrypoint: /bin/bash
+  # stdin_open: true
+  # tty: true
+  command: python -m protector -c config.yaml --foreground --host=0.0.0.0 --backend_host=frock -vvv
+  volumes:
+    - ".:/protector"
+  links:
+    - frock:frock
+helpers:
+  build: ./contrib/helpers
+  volumes:
+    - "./contrib/helpers:/benchmark"
+  # Runs in interactive mode by default
+  # You can also run the benchmark directly at startup:
+  #command: python benchmark.py real_queries.txt
+  entrypoint: /bin/bash
+  stdin_open: true
+  tty: true
+  links:
+    - protector:protector

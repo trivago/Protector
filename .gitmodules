@@ -1,0 +1,3 @@
+[submodule "protector/tests/fixtures/naughty-strings"]
+	path = protector/tests/fixtures/naughty-strings
+	url = https://github.com/minimaxir/big-list-of-naughty-strings.git

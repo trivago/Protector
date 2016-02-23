@@ -1,0 +1,1199 @@
+
+delete from /helloseries/
+delete from /helloseries/ where time > now() - 1h
+drop series /helloseries/
+list series
+list series /^dus\.imgstore\.[a-z]*\d\..*/
+list series /^tcache\..*\.HotelPool\.elements$/
+list series /^tcache\.10-12-3-110-8180\..*\.elements$/
+list series /dus..*.cpu-0\.cpu-system/
+list series /dus.mesos.cron\d+\.statsd\.gauge-metrics\..*\.jvm/
+list series /dus\.mesos.$server.statsd.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\$\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\$s\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\$ser\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\$serv\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\$server\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\.$server.statsd.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\.$server\.statsd.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*..timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.t.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.ta.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.tas.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.task-(.*.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.task-(..timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.task-(.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.task-.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.task.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.*.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-..timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge-.timeline/
+list series /dus\.mesos\.$server\.statsd\.gauge.timeline/
+list series /dus\.mesos\.*\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\.\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.mesos\.c\.statsd\.gauge.timeline/
+list series /dus\.mesos\.ch\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chr\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chrn\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chrno\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chrnos\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chro\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chron\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chrono\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chronos
+list series /dus\.mesos\.chronos/
+list series /dus\.mesos\.chronos1\.statsd\.gauge.timeline/
+list series /dus\.mesos\.chronos1\.statsd\.gauge\.timeline/
+list series /dus\.mesos\.chronos\.statsd\.gauge.timeline/
+list series /dus\.mesos\\.statsd\.gauge-.*.task-(.*).timeline/
+list series /dus\.raas1/
+list series /dus\.www.*\.statsd.derive-.*.request/
+list series /dus\.www.*statsd.derive.*/
+list series /dus\.www\.www20.statsd.derive-.*request/
+list series /dus\.www\.www\d+\.statsd\.latency-pricesearch\.rum\.DE/
+list series /influxdb/
+list series /pse.*cpu-0\.cpu-syste/
+list series /raas.*cpu/
+list series /search.item.standard/
+select * from "dus.www.www0.statsd.latency-pricesearch.rum.DE.search.item.standard-average" limit 1000
+select * from "dus.www.www0.statsd.latency-pricesearch.rum.DE.search.item.standard-average" where time > now()-24h
+select * from "dus.www.www0.statsd.latency-pricesearch.rum.DE.search.item.standard-average" where time > now()-48h
+select * from "dus.www.www0.statsd.latency-pricesearch.rum.DE.slideout.item.standard-average" where time > now()-24h
+select * from "dus.www.www0.statsd.latency-pricesearch.rum.DE.slideout.map.standard-average" where time > now()-24h
+select * from /grafana.dashboard_.*/ where  title =~ /.*.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*cronos.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*s.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*server ov.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*server st.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*server.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*stats.*/i
+select * from /grafana.dashboard_.*/ where  title =~ /.*system.*/i
+select * from /grafana.dashboard_.*/ where (tags =~ /.*.*/i or title =~ /.*.*/i)
+select * from /grafana.dashboard_.*/ where (tags =~ /.*Crono.*/i or title =~ /.*Crono.*/i)
+select * from /grafana.dashboard_.*/ where (tags =~ /.*Ima.*/i or title =~ /.*Ima.*/i)
+select * from /grafana.dashboard_.*/ where (tags =~ /.*Image S.*/i or title =~ /.*Image S.*/i)
+select * from /grafana.dashboard_.*/ where (tags =~ /.*Image Server.*/i or title =~ /.*Image Server.*/i)
+select * from /grafana.dashboard_.*/ where (tags =~ /.*Image.*/i or title =~ /.*Image.*/i)
+select dashboard from "grafana.dashboard_M3dheS1kZWJ1Zw=="
+select dashboard from "grafana.dashboard_Q2hyb25vcw=="
+select dashboard from "grafana.dashboard_UkFBUw=="
+select dashboard from "grafana.dashboard_Y29sbGVjdGQ="
+select dashboard from "grafana.dashboard_Y29udGVudGh1Yg=="
+select dashboard from "grafana.dashboard_Y29yZS1jb250ZW50LWRhc2hib2FyZA=="
+select dashboard from "grafana.dashboard_Y2hpbmFjYWNoZQ=="
+select dashboard from "grafana.dashboard_Y2hyb25vcw=="
+select dashboard from "grafana.dashboard_Y2hyb25vcy1qb2ItY3VycmVuY3ktZXhjaGFuZ2UtcmF0ZXM="
+select dashboard from "grafana.dashboard_Y2hyb25vcy1qb2Jz"
+select dashboard from "grafana.dashboard_Y3B1LWFsbC13d3ctc2VydmVycw=="
+select dashboard from "grafana.dashboard_YW1xcC1vdmVydmlldw=="
+select dashboard from "grafana.dashboard_YWR2ZXJ0aXNlci1zZXJ2aWNlcw=="
+select dashboard from "grafana.dashboard_YWR2ZXJ0aXNlci1zZXJ2aWNlcy1hcGFjaGU="
+select dashboard from "grafana.dashboard_YWR2ZXJ0aXNlci1zZXJ2aWNlcy1teXNxbA=="
+select dashboard from "grafana.dashboard_YWxsLXNlcnZlcnMtbG9hZA=="
+select dashboard from "grafana.dashboard_YXBhY2hl"
+select dashboard from "grafana.dashboard_Z29sbHVtLW1vbm1vbg=="
+select dashboard from "grafana.dashboard_Z2l0bGFi"
+select dashboard from "grafana.dashboard_Z2l0c3ZuMA=="
+select dashboard from "grafana.dashboard_ZGFzaGJvYXJkLXR1dG9yaWFs"
+select dashboard from "grafana.dashboard_ZGFzaGJvYXJkLXRlbXBsYXRl"
+select dashboard from "grafana.dashboard_ZGNvZGFzaGJvYXJk"
+select dashboard from "grafana.dashboard_ZWRnZWNhc3Q="
+select dashboard from "grafana.dashboard_ZWRnZWNhc3QtY2Ru"
+select dashboard from "grafana.dashboard_ZWxhc3RpY3NlYXJjaC12Mw=="
+select dashboard from "grafana.dashboard_ZXhhbXBsZS10YW0tZGFzaGJvYXJk"
+select dashboard from "grafana.dashboard_a2Fma2E="
+select dashboard from "grafana.dashboard_a2Fma2EtbW1i"
+select dashboard from "grafana.dashboard_a2Fma2EtdjI="
+select dashboard from "grafana.dashboard_aW1hZ2Utc2VydmVycw=="
+select dashboard from "grafana.dashboard_aW1hZ2VzdG9yZS1zZXJ2ZXI="
+select dashboard from "grafana.dashboard_aW1hZ2VzdG9yZS1zZXJ2ZXItYWxs"
+select dashboard from "grafana.dashboard_aW5mbHV4LXNwZWVkLW1vbm1vbg=="
+select dashboard from "grafana.dashboard_aW5mbHV4LXNwZWVkLW1vbm1vbnRlc3Q="
+select dashboard from "grafana.dashboard_aW5mbHV4ZGItbGlzdC1zZXJpZXMtYmVuY2htYXJr"
+select dashboard from "grafana.dashboard_aW5mbHV4ZGItdmFybmlzaA=="
+select dashboard from "grafana.dashboard_aW5mbHV4c3BlZWRtb25tb24="
+select dashboard from "grafana.dashboard_amF2YS10b21jYXRz"
+select dashboard from "grafana.dashboard_amF2YS1nYXJiYWdlLWNvbGxlY3Rpb24="
+select dashboard from "grafana.dashboard_amF2YS1tYWluc2VydmljZXM="
+select dashboard from "grafana.dashboard_amF2YS1wYXJ0bmVyc2VydmljZXM="
+select dashboard from "grafana.dashboard_amF2YS1yZWRpcw=="
+select dashboard from "grafana.dashboard_amVua2lucw=="
+select dashboard from "grafana.dashboard_b3BjYWNoZQ=="
+select dashboard from "grafana.dashboard_bG9hZGJhbGFuY2VyLWR1cy1pbWFnZXMtYmFja2VuZA=="
+select dashboard from "grafana.dashboard_bG9hZGJhbGFuY2VyLXN0YXRz"
+select dashboard from "grafana.dashboard_bG9hZGJhbGFuY2VyLXN0YXRzLWRhdGFjZW50ZXI="
+select dashboard from "grafana.dashboard_bW9ubW9uLWVsYXN0aWNzZWFyY2g="
+select dashboard from "grafana.dashboard_bW9ubW9uLWxvZ3N0YXNoLWltcG9ydC1zcGVlZA=="
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLW92ZXJ2aWV3LWFsbC1zZXJ2ZXJz"
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLW92ZXJ2aWV3LXBlci1wb29s"
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLW92ZXJ2aWV3LXBlci1zZXJ2ZXI="
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLWNvbXBhcmlzb24="
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLWNvbm5lY3Rpb25z"
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLXNlcnZlcg=="
+select dashboard from "grafana.dashboard_bWVtY2FjaGVkLXNlcnZlcnM="
+select dashboard from "grafana.dashboard_bWVzb3M="
+select dashboard from "grafana.dashboard_bXF3b3JrZXItcmVzaXppbmc="
+select dashboard from "grafana.dashboard_bXlzcWw="
+select dashboard from "grafana.dashboard_c29sci1kYXNoYm9hcmQ="
+select dashboard from "grafana.dashboard_c2VydmVyLXN0YXRz"
+select dashboard from "grafana.dashboard_c2VydmVyLXN0YXRzLWNvbXBhcmlzb24="
+select dashboard from "grafana.dashboard_c2VydmVyLXN0YXRzLXBzZQ=="
+select dashboard from "grafana.dashboard_c2VydmVyLXN0YXRzX3N0cmVzc3Rlc3Q="
+select dashboard from "grafana.dashboard_c2VydmVyc3RhdHM="
+select dashboard from "grafana.dashboard_c2VydmVyc3RhdHNwc2U="
+select dashboard from "grafana.dashboard_c3NnLWRhc2hib2FyZA=="
+select dashboard from "grafana.dashboard_cGhwLW15c3Fs"
+select dashboard from "grafana.dashboard_cGhwLW1lbWNhY2hlZA=="
+select dashboard from "grafana.dashboard_cGhwLW1lbWNhY2hlZC1jb21tYW5kcw=="
+select dashboard from "grafana.dashboard_cGhwLW1lbWNhY2hlZC1yZXNwb25zZS10aW1l"
+select dashboard from "grafana.dashboard_cGhwLW1lbWNhY2hlZC1yZXNwb25zZS10aW1lLXYy"
+select dashboard from "grafana.dashboard_cGhwLWFwcGxpY2F0aW9uLW1ldHJpY3M="
+select dashboard from "grafana.dashboard_cGhwLWFwcGxpY2F0aW9uLW1ldHJpY3MtY29tcGFyaXNvbi1uZXc="
+select dashboard from "grafana.dashboard_cGhwLWFwcGxpY2F0aW9uLWNsaWNrb3V0cw=="
+select dashboard from "grafana.dashboard_cGhwLWFwcGxpY2F0aW9uLXNlcnZlci1vdmVydmlldw=="
+select dashboard from "grafana.dashboard_cGhwLWNhY2hlLXdhcm1lcnM="
+select dashboard from "grafana.dashboard_cGhwLWphdmEtcG9sbGluZw=="
+select dashboard from "grafana.dashboard_cGhwLXJlZ2lvbi1zZWFyY2g="
+select dashboard from "grafana.dashboard_cGhwLXJlZGlz"
+select dashboard from "grafana.dashboard_cGhwLXJlcXVlc3RzLWFsbC1zZXJ2ZXJzLW92ZXJ2aWV3"
+select dashboard from "grafana.dashboard_cGhwLXJlcXVlc3RzLXBlci1zZXJ2ZXItb3ZlcnZpZXc="
+select dashboard from "grafana.dashboard_cGhwLXNwaWRlci1kZXRlY3Rpb24="
+select dashboard from "grafana.dashboard_cGhwLXRydW5rLXBocDU2LXZzLTU0"
+select dashboard from "grafana.dashboard_cGhwLXdlYnNlcnZpY2UtaG90ZWxzZWFyY2gtb2JzZXJ2ZTE="
+select dashboard from "grafana.dashboard_cGhwLXdlYnNlcnZpY2UtaG90ZWxzZWFyY2gtb2JzZXJ2ZTI="
+select dashboard from "grafana.dashboard_cGhwLXdlYnNlcnZpY2UtaG90ZWxzZWFyY2gtbWFpbg=="
+select dashboard from "grafana.dashboard_cGhwLXhjYWNoZQ=="
+select dashboard from "grafana.dashboard_cGhwYXBwbGljYXRpb25tZXRyaWNz"
+select dashboard from "grafana.dashboard_cm9vbXR5cGUtbWF0Y2hpbmc="
+select dashboard from "grafana.dashboard_cmFhcw=="
+select dashboard from "grafana.dashboard_cmVkaXM="
+select dashboard from "grafana.dashboard_cmVtb3RlZmlsZS1odHRw"
+select dashboard from "grafana.dashboard_cmVtb3RlZmlsZS1zMw=="
+select dashboard from "grafana.dashboard_cnVtbmF2aWdhdGlvbg=="
+select dashboard from "grafana.dashboard_cnVtbmF2aWdhdGlvbnNpbXBsZQ=="
+select dashboard from "grafana.dashboard_cnVtdXNlcnRpbWluZw=="
+select dashboard from "grafana.dashboard_cnVtdXNlcnRpbWluZy1tZXJnZQ=="
+select dashboard from "grafana.dashboard_czMtbWlncmF0aW9u"
+select dashboard from "grafana.dashboard_d2Vic2VydmVyLWxvYWQtYW5kLWRpc2s="
+select dashboard from "grafana.dashboard_dGNhY2hl"
+select dashboard from "grafana.dashboard_dGVzdGluZy1yZWRpcy12Mg=="
+select dashboard from "grafana.dashboard_dHdlbXByb3h5"
+select dashboard from "grafana.dashboard_dmFybmlzaA=="
+select dashboard from "grafana.dashboard_dmNzLXN0YXR1cy1naXRsYWJzdm4="
+select dashboard from "grafana.dashboard_eGNhY2hl"
+select difference(value) from /dus.kafka.kafka0.GenericJMX.*pricelogk-BytesInPerSec.*gauge-Count/ where time > now() - 6h group by time(30s) order asc
+select difference(value) from /dus.kafka.kafka0.GenericJMX.*pricelogk-BytesOutPerSec.*gauge-Count/ where time > now() - 6h group by time(30s) order asc
+select difference(value*(-1)) from /dus.kafka.kafka0.GenericJMX.*pricelogk-BytesOutPerSec.*gauge-Count/ where time > now() - 6h group by time(30s) order asc
+select last(value) from "" where time > now() - 15m group by time(1s) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > 1441904162s and time < 1441909722s group by time(1m) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > 1441953614s and time < 1441964307s group by time(1m) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > 1441957160s and time < 1441960660s group by time(30s) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > 1441961721s and time < 1441961936s group by time(1s) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > now() - 1h group by time(30s) order asc
+select last(value) from "monmon\.influx\.count\.series" where time > now() - 24h group by time(10m) order asc
+select last(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.gauge-.*.task-(.*).timeline/ where time > now() - 24h group by time(1s) order asc
+select last(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.gauge-.*.task-(.*).timeline/ where time > now()-24h group by time(1s) order asc
+select last(value) from /dus.mesos.cron\d.statsd.gauge-.*.task-.*.statuscode/ where time > now() - 15m group by time(1s) fill(0) order asc
+select last(value) from /dus.mesos.cron\d.statsd.gauge-.*.task-.*.statuscode/ where time > now() - 24h group by time(1m) fill(0) order asc
+select last(value) from /dus.mesos.cron\d.statsd.gauge-.*.task-.*.statuscode/ where time > now()-24h group by time(1m) fill(0) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > 1441904162s and time < 1441909722s group by time(1m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > 1441953614s and time < 1441964307s group by time(1m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > 1441957160s and time < 1441960660s group by time(30s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > 1441961721s and time < 1441961936s group by time(1s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > now() - 1h group by time(30s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-free/ where time > now() - 24h group by time(10m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > 1441904162s and time < 1441909722s group by time(1m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > 1441953614s and time < 1441964307s group by time(1m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > 1441957160s and time < 1441960660s group by time(30s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > 1441961721s and time < 1441961936s group by time(1s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > now() - 1h group by time(30s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.df-appdata\.df_complex-used/ where time > now() - 24h group by time(10m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > 1441904162s and time < 1441909722s group by time(1m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > 1441953614s and time < 1441964307s group by time(1m) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > 1441957160s and time < 1441960660s group by time(30s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > 1441961721s and time < 1441961936s group by time(1s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > now() - 1h group by time(30s) order asc
+select last(value) from /dus\.influxdb.influxdb0\.memory\.memory-used/ where time > now() - 24h group by time(10m) order asc
+select last(value) from /dus\.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.gauge-.*.task-(.*).timeline/ where time > now() - 24h group by time(1s) order asc
+select last(value) from /dus\.mesos\.(cron0-master|cron1|cron2-master|cron3)\.statsd\.gauge-.*.task-(.*).timeline/ where time > now() - 24h group by time(1m) order asc
+select last(value) from /dus\.mesos\.(cron0-master|cron1|cron2-master|cron3)\.statsd\.gauge-.*.task-(.*).timeline/ where time > now() - 24h group by time(1s) order asc
+select last(value) from /dus\.mesos\.*\.statsd\.gauge-.*.task-(.*).timeline/ where time > now() - 24h group by time(1m) order asc
+select last(value) from /dus\.mesos\.*\.statsd\.gauge-.*.task-(.*).timeline/ where time > now() - 24h group by time(1s) order asc
+select last(value) from /dus\.mesos\.chronos1\.statsd\.gauge.timeline/ where time > now() - 15m group by time(1s) order asc
+select last(value) from /dus\.mesos\.chronos1\.statsd\.gauge.timeline/ where time > now() - 24h group by time(1m) order asc
+select last(value) from /dus\.mesos\.chronos1\.statsd\.gauge\.timeline/ where time > now() - 15m group by time(1s) order asc
+select last(value) from merge(/^monmon.influx.time.list/) where time > 1441904162s and time < 1441909722s group by time(1m) order desc limit 1
+select last(value) from merge(/^monmon.influx.time.list/) where time > 1441953614s and time < 1441964307s group by time(1m) order desc limit 1
+select last(value) from merge(/^monmon.influx.time.list/) where time > 1441957160s and time < 1441960660s group by time(30s) order desc limit 1
+select last(value) from merge(/^monmon.influx.time.list/) where time > 1441958480s and time < 1441958882s group by time(1s) order desc limit 1
+select last(value) from merge(/^monmon.influx.time.list/) where time > 1441961721s and time < 1441961936s group by time(1s) order desc limit 1
+select last(value) from merge(/^monmon.influx.time.list/) where time > now() - 1h group by time(30s) order desc limit 1
+select last(value) from merge(/^monmon.influx.time.list/) where time > now() - 24h group by time(10m) order desc limit 1
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > 1441904162s and time < 1441909722s group by time(1m) order asc
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > 1441953614s and time < 1441964307s group by time(1m) order asc
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > 1441957160s and time < 1441960660s group by time(30s) order asc
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > 1441961721s and time < 1441961936s group by time(1s) order asc
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > now() - 1h group by time(30s) order asc
+select last(value) from merge(/monmon\.influx\.time\.select/) where time > now() - 24h group by time(10m) order asc
+select last(value*1000) from /dus\.www\.www20\.statsd\.latency-pricesearch\.time-percentile-90/ where time > now() - 2d group by time(1m) order asc
+select mean(value) from "dus.image.mq-worker0.disk-da0.disk_octets.write" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.image.mq-worker0.disk-da0.disk_octets.write" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.image.mq-worker0.interface-bge0.if_octets.rx" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.image.mq-worker0.interface-bge0.if_octets.rx" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.image.mq-worker1.disk-da0.disk_octets.write" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.image.mq-worker1.disk-da0.disk_octets.write" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.image.mq-worker1.interface-bge0.if_octets.rx" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.image.mq-worker1.interface-bge0.if_octets.rx" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.rabbitmq.mq0.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.rabbitmq.mq0.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.rabbitmq.mq0.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.rabbitmq.mq0.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.rabbitmq.mq1.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.rabbitmq.mq1.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(5m) order asc
+select mean(value) from "dus.rabbitmq.mq1.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(1m) order asc
+select mean(value) from "dus.rabbitmq.mq1.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(5m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.a/ where  time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.a/ where value > -1 and time > now() - 1h group by time(1d) fill(-1) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.a/ where value > -1 and time > now() - 1h group by time(1h) fill(-1) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.a/ where value > -1 and time > now() - 1h group by time(1m) fill(-1) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.b/ where  time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.c/ where  time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.es\.a/ where  time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.es\.a/ where value > -1 and time > now() - 1h group by time(1d) fill(-1) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.es\.a/ where value > -1 and time > now() - 1h group by time(1h) fill(-1) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.es\.a/ where value > -1 and time > now() - 1h group by time(1m) fill(-1) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.a/ where time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.a/ where value > -1 and time > now() - 1h group by time(1d) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.a/ where value > -1 and time > now() - 1h group by time(1h) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.a/ where value > -1 and time > now() - 1h group by time(1m) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.b/ where time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.c/ where time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.es\.a/ where value > -1 and time > now() - 1h group by time(1d) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.es\.a/ where value > -1 and time > now() - 1h group by time(1h) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.es\.a/ where value > -1 and time > now() - 1h group by time(1m) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.a/ where time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.a/ where value > -1 and time > now() - 1h group by time(1d) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.a/ where value > -1 and time > now() - 1h group by time(1h) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.a/ where value > -1 and time > now() - 1h group by time(1m) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.b/ where time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.c/ where time > now() - 1h and value > -1 group by time(1m) order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.es\.a/ where value > -1 and time > now() - 1h group by time(1d) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.es\.a/ where value > -1 and time > now() - 1h group by time(1h) fill(-1)  order asc
+select mean(value) from /^java\.roomtypematching\.gauges\.overall.success\.es\.a/ where value > -1 and time > now() - 1h group by time(1m) fill(-1)  order asc
+select mean(value) from /dus.influxdb.influxdb0.varnish-default-backend.connections-.*/ where time > now() - 6h group by time(30s) order asc
+select mean(value) from /dus.memcached.mc2.memcached-.*\.memcached_command-get/ where time > now() - 2d group by time(1m) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.errors/ where time > now() - 15m group by time(1s) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.errors/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.errors/ where time > now()-24h group by time(1m) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.exceptions/ where time > now() - 15m group by time(1s) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.exceptions/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.exceptions/ where time > now()-24h group by time(1m) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.warnings/ where time > now() - 15m group by time(1s) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.warnings/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.derive-.*.task-.*.warnings/ where time > now()-24h group by time(1m) order asc
+select mean(value) from /dus.svn.svn0.interface.*.if_octets.rx/ where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value) from /dus.svn.svn0.interface.*.if_octets.rx/ where time > now() - 6h group by time(30s) fill(0) order asc
+select mean(value) from /dus.www..*.disk-.*.disk_octets.read/ where time > now()-7d group by time(5m) order asc
+select mean(value) from /dus.www.www8.disk-.*.disk_octets.read/ where time > now()-7d group by time(5m) order asc
+select mean(value) from /dus.www.www[0-9]+.statsd.derive-pricesearch.request/ where time > now() - 2d group by time(1m) fill(0) order asc
+select mean(value) from /dus.www.www[0-9]+.statsd.derive-pricesearch.request/ where time > now()-2d group by time(1m) fill(0) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now() - 15m group by time(0.1s) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now() - 15m group by time(1s) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now() - 1h group by time(1s) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now() - 6h group by time(10s) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now() - 6h group by time(30s) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now()-6h group by time(10s) order asc
+select mean(value) from /dus\.app\.app\d+\.load\.load\.shortterm/ where time > now()-6h group by time(30s) order asc
+select mean(value) from /dus\.imgstore\.imgstore\d\.nginx\.nginx_requests/ where time > now() - 6h group by time(30s) fill(null) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > now() - 1h group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0.*swap.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > 1441957160s and time < 1441960660s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > 1441958480s and time < 1441958882s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > 1441961721s and time < 1441961936s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > now() - 1h group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.df-appdata.df.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > now() - 1h group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.read/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > now() - 1h group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_octets\.write/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > now() - 1h group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.read/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > now() - 1h group by time(10s) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.disk-.*disk_ops.write/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > 1441957160s and time < 1441960660s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > 1441958480s and time < 1441958882s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > 1441961721s and time < 1441961936s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > now() - 1h group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > now() - 1h group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-free/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > now() - 1h group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.swap\.swap-used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > now() - 1h group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-2003-local\.tcp_connections-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > now() - 1h group by time(5s) order asc
+select mean(value) from /dus\.influxdb.influxdb0\.tcpconns-8086-local\.tcp_connections-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.com\.trivago\.raas\.resources\.pools\.impl/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.com\.trivago\.raas\.resources\.pools\.impl/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.gc.*count.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.gc.*time\.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.committed\.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.committed\.value/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.max\.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.max\.value/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.used/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.non-heap\.committed/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.non-heap\.committed/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.non-heap\.init/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.non-heap\.init/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.non-heap\.used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.non-heap\.used/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.total\.commited/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.total\.commited/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.total\.max/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.total\.max/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.total\.used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.total\.used/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.blocked\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.blocked\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.daemon\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.daemon\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.new\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.new\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.runnable\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.runnable\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.timed_waiting\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.timed_waiting\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.waiting\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.threads\.waiting\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.com\.trivago\.raas\.resources\.pools\.impl/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.com\.trivago\.raas\.resources\.pools\.impl/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.gc.*count.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.gc.*time\.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.committed\.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.committed\.value/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.max\.value/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.max\.value/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.used/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.non-heap\.committed/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.non-heap\.committed/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.non-heap\.init/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.non-heap\.init/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.non-heap\.used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.non-heap\.used/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.total\.commited/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.total\.commited/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.total\.max/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.total\.max/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.total\.used/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.total\.used/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.blocked\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.blocked\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.daemon\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.daemon\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.new\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.new\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.runnable\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.runnable\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.timed_waiting\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.timed_waiting\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.waiting\.count/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.threads\.waiting\.count/ where time > now() - 24h group by time(30s) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql.tpc-db3\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.mysql\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.mysql\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.partner\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.partner\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.raa\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raa\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-system/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.aggregation-cpu-average\.cpu-user/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.contextswitch\.contextswitch/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > 1441901278s and time < 1441965976s group by time(1m) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > 1441921133s and time < 1441953482s group by time(30s) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > 1441927471s and time < 1441965985s group by time(30s) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > 1441929220s and time < 1441945394s group by time(30s) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > 1441933264s and time < 1441941351s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > 1441933677s and time < 1441938332s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.interface-\w+\.if_octets\.tx/ where time > now() - 7d group by time(10m) fill(0) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.memory\.memory-.*/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > 1441921133s and time < 1441953482s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > 1441927471s and time < 1441965985s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.processes\.ps_state.*/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > 1441921133s and time < 1441953482s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > 1441927471s and time < 1441965985s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > 1441921133s and time < 1441953482s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > 1441927471s and time < 1441965985s group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv0\.swap\.swap_io-in/ where time > now() - 7d group by time(10m) order asc
+select mean(value) from /dus\.raas.inv1\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv1\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.aggregation-cpu-average\.cpu-system/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv1\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.aggregation-cpu-average\.cpu-user/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv1\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.contextswitch\.contextswitch/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas.inv1\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.interface-\w+\.if_octets\.tx/ where time > 1441933677s and time < 1441938332s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.raas.inv1\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.raas.inv1\.memory\.memory-.*/ where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from /dus\.raas.inv1\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.processes\.ps_state.*/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas.inv1\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.swap\.swap/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas.inv1\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas.inv1\.swap\.swap_io-in/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas.inv1\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.raas\.aggregation-cpu-average\.cpu-\w+t$/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas\.aggregation-cpu-average\.cpu-system/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas\.aggregation-cpu-average\.cpu-user/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas\.contextswitch\.contextswitch/ where time > 1441933677s and time < 1441938332s group by time(10s) order asc
+select mean(value) from /dus\.raas\.interface-\w+\.if_octets\.tx/ where time > 1441933677s and time < 1441938332s group by time(10s) fill(0) order asc
+select mean(value) from /dus\.raas\.memory\.memory-.*/ where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from /dus\.raas\.processes\.ps_state.*/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas\.swap\.swap/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.raas\.swap\.swap_io-in/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from /dus\.tpc-db\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.tpc-db\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.tpc-db\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.www.intelligence0\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.intelligence0\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.aggregation-cpu-average\.cpu-\w+t$/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.contextswitch\.contextswitch/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.contextswitch\.contextswitch/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value) from /dus\.www.www10\.interface-\w+\.if_octets\.tx/ where time > now() - 24h group by time(5m) fill(0) order asc
+select mean(value) from /dus\.www.www10\.memory\.memory-.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.memory\.memory-.*/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.processes\.ps_state.*/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.processes\.ps_state.*/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.swap\.swap/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.swap\.swap/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www.www10\.swap\.swap_io-in/ where time > now() - 24h group by time(1m) order asc
+select mean(value) from /dus\.www.www10\.swap\.swap_io-in/ where time > now() - 24h group by time(5m) order asc
+select mean(value) from /dus\.www\..*\.aggregation-cpu-average.*/ where time > now()-7d group by time(10m) order asc
+select mean(value) from /dus\.www\..*\.interface-.*\.if_octets\.rx/ where time > now()-7d group by time(5m) order asc
+select mean(value) from /dus\.www\..*\.memory\.memory.*/ where time > now()-7d group by time(10m) order asc
+select mean(value) from /dus\.www\.www20\.statsd\.derive-pricesearch\.clickout.urlway.*/ where time > now() - 2d group by time(1m) order asc
+select mean(value) from /dus\.www\.www20\.statsd\.derive-pricesearch\.exception\.exception.*/ where time > now() - 2d group by time(1m) order asc
+select mean(value) from /dus\.www\.www20\.statsd\.derive-pricesearch\.request/ where time > now() - 2d group by time(1m) fill(0) order asc
+select mean(value) from /dus\.www\.www8\.aggregation-cpu-average.*/ where time > now()-7d group by time(10m) order asc
+select mean(value) from /dus\.www\.www8\.interface-.*\.if_octets\.rx/ where time > now()-7d group by time(5m) order asc
+select mean(value) from /dus\.www\.www8\.memory\.memory.*/ where time > now()-7d group by time(10m) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now() - 15m group by time(0.1s) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now() - 15m group by time(1s) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now() - 1h group by time(1s) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now() - 6h group by time(10s) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now() - 6h group by time(30s) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now()-6h group by time(10s) order asc
+select mean(value) from /dus\.www\.www\d+\.load\.load\.shortterm/ where time > now()-6h group by time(30s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.clickout\.urlway\.regular/ where time > now() - 15m group by time(1m) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.clickout\.urlway\.regular/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.clickout\.urlway\.regular/ where time > now() - 6h group by time(1m) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.clickout\.urlway\.regular/ where time > now()-6h group by time(1m) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now() - 15m group by time(0.1s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now() - 15m group by time(1s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now() - 1h group by time(1s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now() - 6h group by time(10s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now() - 6h group by time(30s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now()-12h group by time(30s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now()-6h group by time(10s) order asc
+select mean(value) from /dus\.www\.www\d+\.statsd\.derive-pricesearch\.request$/ where time > now()-6h group by time(30s) order asc
+select mean(value) from /pse\.tsp.bid-db1\.aggregation-cpu-average.cpu-system/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.bid-db1\.aggregation-cpu-average.cpu-user/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.bid-db1\.aggregation-cpu-average.cpu-wait/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.bid-db1\.memory\.memory-.*/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.bid-db1\.processes\.ps_state.*/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.bid-db1\.swap\.swap_io-in/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web0\.aggregation-cpu-average.cpu-system/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web0\.aggregation-cpu-average.cpu-user/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web0\.aggregation-cpu-average.cpu-wait/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web0\.memory\.memory-.*/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web0\.processes\.ps_state.*/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web0\.swap\.swap_io-in/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web1\.aggregation-cpu-average.cpu-system/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web1\.aggregation-cpu-average.cpu-user/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web1\.aggregation-cpu-average.cpu-wait/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web1\.memory\.memory-.*/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web1\.processes\.ps_state.*/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /pse\.tsp.tsp-web1\.swap\.swap_io-in/ where time > now() - 2d group by time(5m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.CacheDataBookinglink.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.CacheDataBookinglink.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.CacheDataBookinglink.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.HotelPool.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.HotelPool.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.HotelPool.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.InstantRegionHotelsResponse.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.InstantRegionHotelsResponse.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.InstantRegionHotelsResponse.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.PriceCache.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.PriceCache.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.PriceCache.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerItem.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerItem.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerItem.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerRegion.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerRegion.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerRegion.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerRegionBots.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerRegionBots.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.TaskManagerRegionBots.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.ipBlocks.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.ipBlocks.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.ipBlocks.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.tcache-1.elements/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.tcache-1.eviction/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from /tcache.10-12-3-110-8180.tcache-1.hitratio/ where time > now() - 1h group by time(1m) order asc
+select mean(value) from merge(/^java\.roomtypematching\.gauges\.failed.comdata\.da\./) where value > -1 and time > now() - 1h group by time(30m) fill(-1) order asc
+select mean(value) from merge(/^java\.roomtypematching\.gauges\.failed.comdata\.es\./) where value > -1 and time > now() - 1h group by time(30m) fill(-1) order asc
+select mean(value) from merge(/^java\.roomtypematching\.gauges\.failed.keyword\.da\./) where value > -1 and time > now() - 1h group by time(30m) fill(-1)  order asc
+select mean(value) from merge(/^java\.roomtypematching\.gauges\.failed.keyword\.es\./) where value > -1 and time > now() - 1h group by time(30m) fill(-1)  order asc
+select mean(value) from merge(/^java\.roomtypematching\.gauges\.overall.success\.da\./) where value > -1 and time > now() - 1h group by time(30m) fill(-1)  order asc
+select mean(value) from merge(/^java\.roomtypematching\.gauges\.overall.success\.es\./) where value > -1 and time > now() - 1h group by time(30m) fill(-1)  order asc
+select mean(value) from merge(/dus.redis.redis1.trivago.com.redis_info-6379.gauge-connected_clients/) where time > now()-12h group by time(30s) order asc
+select mean(value) from merge(/dus.svn.svn0.disk-\w+.disk_octets.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/dus.svn.svn0.disk-\w+.disk_octets.read/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore0.*interface.*\.if_octets.rx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore0.*interface.*\.if_octets.tx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore1.*interface.*\.if_octets.rx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore1.*interface.*\.if_octets.tx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore2.*interface.*\.if_octets.rx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore2.*interface.*\.if_octets.tx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore3.*interface.*\.if_octets.rx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore3.*interface.*\.if_octets.tx/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore3\.disk.*octets\.read/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.imgstore\.imgstore3\.disk.*octets\.write/) where time > now() - 6h group by time(30s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > now() - 1h group by time(5s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > now() - 1h group by time(5s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > now() - 1h group by time(5s) order asc
+select mean(value) from merge(/dus\.influxdb.influxdb0\.load.load.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mesos\.cron\d+\.statsd\.gauge-metrics.*UnderLayer.max/) where time > now()-24h group by time(30s) fill(0) order asc
+select mean(value) from merge(/dus\.mesos\.cron\d+\.statsd\.gauge-metrics.*UpperLayer.max/) where time > now()-24h group by time(30s) fill(0) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql.tpc-db3\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.mysql\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.partner\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raa\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.read/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_octets.write/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.read/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.disk-\w+\.disk_ops.write/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.longterm/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.midterm/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > 1441921133s and time < 1441953482s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > 1441927471s and time < 1441965985s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv0\.load\.load\.shortterm/) where time > now() - 7d group by time(10m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_octets.read/) where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_octets.write/) where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_ops.read/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_ops.write/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.load\.load\.longterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.load\.load\.midterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas.inv1\.load\.load\.shortterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas.inv1\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.raas\.disk-\w+\.disk_octets.read/) where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from merge(/dus\.raas\.disk-\w+\.disk_octets.write/) where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value) from merge(/dus\.raas\.disk-\w+\.disk_ops.read/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas\.disk-\w+\.disk_ops.write/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas\.load\.load\.longterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas\.load\.load\.midterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.raas\.load\.load\.shortterm/) where time > 1441933677s and time < 1441938332s group by time(1s) order asc
+select mean(value) from merge(/dus\.tpc-db\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.tpc-db\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.tpc-db\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.tpc-db\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.tpc-db\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.tpc-db\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.tpc-db\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.intelligence0\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_octets.read/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_octets.write/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_ops.read/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.disk-\w+\.disk_ops.write/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/dus\.www.www10\.load\.load\.longterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.load\.load\.longterm/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/dus\.www.www10\.load\.load\.midterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.load\.load\.midterm/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/dus\.www.www10\.load\.load\.shortterm/) where time > now() - 24h group by time(1m) order asc
+select mean(value) from merge(/dus\.www.www10\.load\.load\.shortterm/) where time > now() - 24h group by time(5m) order asc
+select mean(value) from merge(/hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_response-FRONTEND-[a-z\-]*\.hrsp_5xx/) where time > now() - 2d group by time(1m) order asc
+select mean(value) from merge(/hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_response-FRONTEND-[a-z\-]*\.hrsp_\dxx/) where time > now() - 2d group by time(1m) order asc
+select mean(value) from merge(/pse\.tsp.bid-db1\.disk-\w+\.disk_octets.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.bid-db1\.disk-\w+\.disk_ops.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.bid-db1\.interface-\w+\.if_octets\.tx/) where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value) from merge(/pse\.tsp.bid-db1\.load\.load\.longterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.bid-db1\.load\.load\.midterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.bid-db1\.load\.load\.shortterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web0\.disk-\w+\.disk_octets.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web0\.disk-\w+\.disk_ops.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web0\.interface-\w+\.if_octets\.tx/) where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web0\.load\.load\.longterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web0\.load\.load\.midterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web0\.load\.load\.shortterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web1\.disk-\w+\.disk_octets.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web1\.disk-\w+\.disk_ops.read/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web1\.interface-\w+\.if_octets\.tx/) where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web1\.load\.load\.longterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web1\.load\.load\.midterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value) from merge(/pse\.tsp.tsp-web1\.load\.load\.shortterm/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker0.disk-da0.disk_octets.read" where time > now()-2d group by time(1m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker0.disk-da0.disk_octets.read" where time > now()-2d group by time(5m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker0.interface-bge0.if_octets.tx" where time > now()-2d group by time(1m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker0.interface-bge0.if_octets.tx" where time > now()-2d group by time(5m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker1.disk-da0.disk_octets.read" where time > now()-2d group by time(1m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker1.disk-da0.disk_octets.read" where time > now()-2d group by time(5m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker1.interface-bge0.if_octets.tx" where time > now()-2d group by time(1m) order asc
+select mean(value*(-1)) from "dus.image.mq-worker1.interface-bge0.if_octets.tx" where time > now()-2d group by time(5m) order asc
+select mean(value*(-1)) from /dus.svn.svn0.interface.*.if_octets.tx/ where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from /dus.svn.svn0.interface.*.if_octets.tx/ where time > now() - 6h group by time(30s) order asc
+select mean(value*(-1)) from /dus.www..*.disk-.*.disk_octets.write/ where time > now()-7d group by time(5m) order asc
+select mean(value*(-1)) from /dus.www.www8.disk-.*.disk_octets.write/ where time > now()-7d group by time(5m) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > now() - 1h group by time(5s) order asc
+select mean(value*(-1)) from /dus\.influxdb.influxdb0.*swap.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.mysql.tpc-db3\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.mysql.tpc-db3\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.mysql\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.mysql\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.partner\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.partner\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raa\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.raa\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > 1441901278s and time < 1441965976s group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > 1441921133s and time < 1441953482s group by time(30s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > 1441927471s and time < 1441965985s group by time(30s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > 1441929220s and time < 1441945394s group by time(30s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > 1441933264s and time < 1441941351s group by time(10s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > 1441933677s and time < 1441938332s group by time(10s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.interface-\w+\.if_octets\.rx/ where time > now() - 7d group by time(10m) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > 1441901278s and time < 1441965976s group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > 1441921133s and time < 1441953482s group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > 1441927471s and time < 1441965985s group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > 1441929220s and time < 1441945394s group by time(30s) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > 1441933264s and time < 1441941351s group by time(10s) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raas.inv0\.swap\.swap_io-out/ where time > now() - 7d group by time(10m) order asc
+select mean(value*(-1)) from /dus\.raas.inv1\.interface-\w+\.if_octets\.rx/ where time > 1441933677s and time < 1441938332s group by time(10s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv1\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas.inv1\.swap\.swap_io-out/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value*(-1)) from /dus\.raas.inv1\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.raas\.interface-\w+\.if_octets\.rx/ where time > 1441933677s and time < 1441938332s group by time(10s) fill(0) order asc
+select mean(value*(-1)) from /dus\.raas\.swap\.swap_io-out/ where time > 1441933677s and time < 1441938332s group by time(5s) order asc
+select mean(value*(-1)) from /dus\.tpc-db\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.tpc-db\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.www.intelligence0\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.www.intelligence0\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.www.www10\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(1m) fill(0) order asc
+select mean(value*(-1)) from /dus\.www.www10\.interface-\w+\.if_octets\.rx/ where time > now() - 24h group by time(5m) fill(0) order asc
+select mean(value*(-1)) from /dus\.www.www10\.swap\.swap_io-out/ where time > now() - 24h group by time(1m) order asc
+select mean(value*(-1)) from /dus\.www.www10\.swap\.swap_io-out/ where time > now() - 24h group by time(5m) order asc
+select mean(value*(-1)) from /pse\.tsp.bid-db1\.swap\.swap_io-out/ where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from /pse\.tsp.tsp-web0\.swap\.swap_io-out/ where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from /pse\.tsp.tsp-web1\.swap\.swap_io-out/ where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/dus.svn.svn0.disk-\w+.disk_octets.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/dus.svn.svn0.disk-\w+.disk_octets.write/) where time > now() - 6h group by time(30s) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.bid-db1\.disk-\w+\.disk_octets.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.bid-db1\.disk-\w+\.disk_ops.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.bid-db1\.interface-\w+\.if_octets\.rx/) where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.tsp-web0\.disk-\w+\.disk_octets.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.tsp-web0\.disk-\w+\.disk_ops.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.tsp-web0\.interface-\w+\.if_octets\.rx/) where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.tsp-web1\.disk-\w+\.disk_octets.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.tsp-web1\.disk-\w+\.disk_ops.write/) where time > now() - 2d group by time(5m) order asc
+select mean(value*(-1)) from merge(/pse\.tsp.tsp-web1\.interface-\w+\.if_octets\.rx/) where time > now() - 2d group by time(5m) fill(0) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d.haproxy_FRONTEND-[a-z\-]*\.ereq/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_FRONTEND-[a-z\-]*\.req_tot/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_common-FRONTEND-[a-z\-]*\.rate$/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_common-FRONTEND-[a-z\-]*\.scur/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_response-FRONTEND-[a-z\-]*\.hrsp_2xx/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_response-FRONTEND-[a-z\-]*\.hrsp_3xx/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_response-FRONTEND-[a-z\-]*\.hrsp_4xx/ where time > now() - 2d group by time(5m) order asc
+select mean(value*10) from /hkg\.lb\.lb[0-9]-hkg[a-z\-]*\.haproxy-\d\.haproxy_response-FRONTEND-[a-z\-]*\.hrsp_5xx/ where time > now() - 2d group by time(5m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.Code-Cache\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.Code-Cache\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.PS-Eden-Space\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.PS-Eden-Space\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.PS-Old-Gen\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.PS-Old-Gen\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.PS-Survivor-Space\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus.raas1\.jvm\.memory\.pools\.PS-Survivor-Space\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus\.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus\.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus\.raas2\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.dus\.raas2\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.Code-Cache\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.Code-Cache\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.PS-Eden-Space\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.PS-Eden-Space\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.PS-Old-Gen\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.PS-Old-Gen\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.PS-Survivor-Space\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg.raas1\.jvm\.memory\.pools\.PS-Survivor-Space\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg\.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg\.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg\.raas2\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.hkg\.raas2\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.sfo\.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.sfo\.raas1\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.sfo\.raas2\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(1m) order asc
+select mean(value*100) from /dus\.mesos\.cron1\.statsd\.gauge-metrics\.sfo\.raas2\.jvm\.memory\.heap\.usage/ where time > now() - 24h group by time(30s) order asc
+select mean(value*1000) from /dus\.www\.www20\.statsd\.latency-pricesearch\.time-average/ where time > now() - 2d group by time(1m) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now() - 15m group by time(0.1s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now() - 15m group by time(1s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now() - 1h group by time(1s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now() - 6h group by time(10s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now() - 6h group by time(30s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now()-12h group by time(30s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now()-6h group by time(10s) order asc
+select mean(value*1000) from /dus\.www\.www\d+\.statsd\.latency-pricesearch\.time-average/ where time > now()-6h group by time(30s) order asc
+select median(value) from "dus.image.mq-worker0.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(1m) order asc
+select median(value) from "dus.image.mq-worker0.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(5m) order asc
+select median(value) from "dus.image.mq-worker0.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(1m) order asc
+select median(value) from "dus.image.mq-worker0.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(5m) order asc
+select median(value) from "dus.image.mq-worker1.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(1m) order asc
+select median(value) from "dus.image.mq-worker1.aggregation-cpu-average.cpu-system" where time > now()-2d group by time(5m) order asc
+select median(value) from "dus.image.mq-worker1.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(1m) order asc
+select median(value) from "dus.image.mq-worker1.aggregation-cpu-average.cpu-user" where time > now()-2d group by time(5m) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > now() - 1h group by time(5s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.rx$/ where time > now() - 24h group by time(1m) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > now() - 1h group by time(5s) order asc
+select median(value) from /^dus\.influxdb.influxdb0\.interface-eth0\.if_octets.tx$/ where time > now() - 24h group by time(1m) order asc
+select median(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.da\.a/ where value > -1 and time > now() - 1w group by time(30s) order asc
+select median(value) from /^java\.roomtypematching\.gauges\.failed.comdata\.es\.a/ where value > -1 and time > now() - 1w group by time(30s) order asc
+select median(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.da\.a/ where value > -1 and  time > now() - 1w group by time(30s) order asc
+select median(value) from /^java\.roomtypematching\.gauges\.failed.keyword\.es\.a/ where value > -1 and  time > now() - 1w group by time(30s) order asc
+select median(value) from /^java\.roomtypematching\.gauges\.overall.success\.da\.a/ where value > -1 and time > now() - 1w group by time(30s) order asc
+select median(value) from /^java\.roomtypematching\.gauges\.overall.success\.es\.a/ where value > -1 and time > now() - 1w group by time(30s) order asc
+select median(value) from /dus.image.mq-worker.*.disk-da0.disk_octets.*/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.image.mq-worker.*.disk-da0.disk_octets.*/ where time > now()-2d group by time(5m) order asc
+select median(value) from /dus.image.mq-worker0.memory.memory-*/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.image.mq-worker0.memory.memory-*/ where time > now()-2d group by time(5m) order asc
+select median(value) from /dus.image.mq-worker1.memory.memory-*/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.image.mq-worker1.memory.memory-*/ where time > now()-2d group by time(5m) order asc
+select median(value) from /dus.influxdb.influxdb0.memory.*/ where time > now() - 6h group by time(30s) order asc
+select median(value) from /dus.java-cache..*.redis_info-.*.counter-commands_processed/ where time > now() - 2d group by time(1m) order asc
+select median(value) from /dus.java-cache..*.redis_info-.*.counter-commands_processed/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.gauge-.*.task-.*.peakmemory/ where time > now() - 15m group by time(1s) fill(0) order asc
+select median(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.gauge-.*.task-.*.peakmemory/ where time > now() - 24h group by time(1m) fill(0) order asc
+select median(value) from /dus.mesos.(cron0-master|cron1|cron2-master|cron3).statsd.gauge-.*.task-.*.peakmemory/ where time > now()-24h group by time(1m) fill(0) order asc
+select median(value) from /dus.rabbitmq.mq.*.disk-da*/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.rabbitmq.mq.*.disk-da*/ where time > now()-2d group by time(5m) order asc
+select median(value) from /dus.rabbitmq.mq0.memory.memory-*/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.rabbitmq.mq0.memory.memory-*/ where time > now()-2d group by time(5m) order asc
+select median(value) from /dus.rabbitmq.mq1.memory.memory-*/ where time > now()-2d group by time(1m) order asc
+select median(value) from /dus.rabbitmq.mq1.memory.memory-*/ where time > now()-2d group by time(5m) order asc
+select median(value) from /dus.svn.gitlab0.aggregation-cpu-average.cpu-interrupt/ where time > 1428482875s and time < 1428490064s group by time(30s) fill(0) order asc
+select median(value) from /dus.svn.gitlab0.aggregation-cpu-average.cpu-system/ where time > 1428482875s and time < 1428490064s group by time(30s) fill(0) order asc
+select median(value) from /dus.svn.gitlab0.aggregation-cpu-average.cpu-user/ where time > 1428482875s and time < 1428490064s group by time(30s) fill(0) order asc
+select median(value) from /dus.svn.gitlab0.nginx.connections-.*/ where time > 1428482875s and time < 1428490064s group by time(10s) fill(0) order asc
+select median(value) from /dus.svn.gitlab0.nginx.nginx_requests/ where time > 1428482875s and time < 1428490064s group by time(10s) order asc
+select median(value) from /dus.svn.svn0.aggregation-cpu-average.cpu-interrupt/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.aggregation-cpu-average.cpu-interrupt/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.aggregation-cpu-average.cpu-system/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.aggregation-cpu-average.cpu-system/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.aggregation-cpu-average.cpu-user/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.aggregation-cpu-average.cpu-user/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.load.load.*/ where time > now() - 2d group by time(5m) order asc
+select median(value) from /dus.svn.svn0.load.load.*/ where time > now() - 6h group by time(1m) order asc
+select median(value) from /dus.svn.svn0.memory.memory-active/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-active/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-cache/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-cache/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-free/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-free/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-wired/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.memory.memory-wired/ where time > now() - 6h group by time(1m) fill(0) order asc
+select median(value) from /dus.svn.svn0.nginx.connections-.*/ where time > now() - 2d group by time(5m) fill(0) order asc
+select median(value) from /dus.svn.svn0.nginx.connections-.*/ where time > now() - 6h group by time(30s) fill(0) order asc
+select median(value) from /dus.svn.svn0.nginx.nginx_requests/ where time > now() - 2d group by time(5m) order asc
+select median(value) from /dus.svn.svn0.nginx.nginx_requests/ where time > now() - 6h group by time(30s) order asc
+select median(value) from /dus.www.www20.statsd.gauge-pricesearch.memory/ where time > now() - 2d group by time(1m) fill(0) order asc
+select median(value) from /dus\.imgstore\.imgstore\d\.aggregation-cpu-average\.cpu-system/ where time > now() - 6h group by time(30s) order asc
+select median(value) from /dus\.imgstore\.imgstore\d\.aggregation-cpu-average\.cpu-user/ where time > now() - 6h group by time(30s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > now() - 1h group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-system/ where time > now() - 24h group by time(1m) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > now() - 1h group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-user/ where time > now() - 24h group by time(1m) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > 1441904162s and time < 1441909722s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > 1441953614s and time < 1441964307s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > 1441957160s and time < 1441960660s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > 1441958480s and time < 1441958882s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > 1441961721s and time < 1441961936s group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > now() - 1h group by time(10s) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.aggregation-cpu-average\.cpu-wait/ where time > now() - 24h group by time(1m) fill(0) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > now() - 1h group by time(5s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.rx$/ where time > now() - 24h group by time(1m) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > 1441904162s and time < 1441909722s group by time(10s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > 1441953614s and time < 1441964307s group by time(10s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > 1441957160s and time < 1441960660s group by time(1s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > 1441957160s and time < 1441960660s group by time(5s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > 1441958480s and time < 1441958882s group by time(1s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > 1441961721s and time < 1441961936s group by time(0.1s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > now() - 1h group by time(5s) order asc
+select median(value) from /dus\.influxdb.influxdb0\.interface-eth1\.if_octets\.tx$/ where time > now() - 24h group by time(1m) order asc
+select median(value) from /dus\.www\..*\.apache-www\.apache_connections/ where time > now()-7d group by time(5m) fill(0) order asc
+select median(value) from /dus\.www\..*\.apache-www\.apache_scoreboard/ where time > now()-7d group by time(5m) order asc
+select median(value) from /dus\.www\.www8\.apache-www\.apache_connections/ where time > now()-7d group by time(5m) fill(0) order asc
+select median(value) from /dus\.www\.www8\.apache-www\.apache_scoreboard/ where time > now()-7d group by time(5m) order asc
+select sum(value) from /dus.image.mq-worker0.statsd.derive-mqworker.imageimport.*/ where time > now()-2d group by time(1m) fill(0) order asc
+select sum(value) from /dus.image.mq-worker0.statsd.derive-mqworker.imageimport.*/ where time > now()-2d group by time(5m) fill(0) order asc
+select sum(value) from /dus.image.mq-worker1.statsd.derive-mqworker.imageimport.*/ where time > now()-2d group by time(1m) fill(0) order asc
+select sum(value) from /dus.image.mq-worker1.statsd.derive-mqworker.imageimport.*/ where time > now()-2d group by time(5m) fill(0) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.all.processed.rates\.da\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.all.processed.rates\.da\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.all.processed.rates\.es\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.all.processed.rates\.es\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.comdata\.da\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.comdata\.da\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.comdata\.es\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.comdata\.es\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.keyword\.da\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.keyword\.da\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.keyword\.es\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.failed.keyword\.es\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.overall.success\.da\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.overall.success\.da\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.overall.success\.es\./) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/^java\.roomtypematching\.counters\.overall.success\.es\.a/) where time > now() - 1h group by time(1m) order asc
+select sum(value) from merge(/dus\.imgstore\.imgstore0\.disk.*octets\.read/) where time > now() - 6h group by time(30s) order asc
+select sum(value) from merge(/dus\.imgstore\.imgstore0\.disk.*octets\.write/) where time > now() - 6h group by time(30s) order asc
+select sum(value) from merge(/dus\.imgstore\.imgstore1\.disk.*octets\.read/) where time > now() - 6h group by time(30s) order asc
+select sum(value) from merge(/dus\.imgstore\.imgstore1\.disk.*octets\.write/) where time > now() - 6h group by time(30s) order asc
+select sum(value) from merge(/dus\.imgstore\.imgstore2\.disk.*octets\.read/) where time > now() - 6h group by time(30s) order asc
+select sum(value) from merge(/dus\.imgstore\.imgstore2\.disk.*octets\.write/) where time > now() - 6h group by time(30s) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.delete.50.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.delete.50.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.delete.55.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.delete.55.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.download.50.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.download.50.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.download.55.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.download.55.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.exists.50.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.exists.50.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.exists.55.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.exists.55.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.getfilesize.50.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.getfilesize.50.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.getfilesize.55.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.getfilesize.55.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.upload.50.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.upload.50.errors.*/) where time > now() - 24h group by time(1m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.upload.55.calls/) where time > now() - 24h group by time(5m) order asc
+select sum(value*10) from merge(/dus.image.*.statsd.*.remotefilecon.http.upload.55.errors.*/) where time > now() - 24h group by time(1m) order asc
+select tags,title,text_details from merge(/\.java\.boot\.version\./) where time > now() - 15m
+select tags,title,text_details from merge(/\.java\.boot\.version\./) where time > now() - 1h
+select tags,title,text_details from merge(/\.java\.boot\.version\./) where time > now() - 6h
+select title,tags,description from releases
+
+select median(value) from /datacenter.www.servername.statsd.gauge-appname.memory/ where time > now()-4h group by time(10s) fill(0) order asc

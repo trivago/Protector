@@ -1,0 +1,24 @@
+---
+host: localhost
+port: 8888
+backend_host: localhost
+backend_port: 8086
+pidfile: /tmp/protector.pid
+logfile: /tmp/protector.log
+rules:
+  - prevent_delete
+  - prevent_drop
+  - series_endswith_dot
+  - short_series_name
+  - too_many_datapoints
+  - negative_groupby_statement
+  - query_old_data
+# You can whitelist series names
+# Series queries matching these patterns won't be checked
+whitelist:
+  - ^releases$
+  - grafana\.
+  - ^php_serverstart$
+  - ^c_test_events$
+  - ^application_release$
+  - .*java.*boot.*version.*
