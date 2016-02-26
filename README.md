@@ -2,6 +2,9 @@
 
 # Protector
 
+[![Build Status](https://travis-ci.org/trivago/Protector.svg?branch=master)](https://travis-ci.org/trivago/Protector)
+
+
 A circuit breaker for Time Series Databases like InfluxDB
 
 ## Introduction
