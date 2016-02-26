@@ -15,6 +15,5 @@ install:
 script:
   - python setup.py nosetests
 after_success:
-  # python-coveralls doesn't like coverage 4.0 (see https://github.com/z4r/python-coveralls/issues/39)
-  - pip install python-coveralls coverage==3.7.1; fi
-  - python setup.py nosetests --with-coverage && coveralls; fi
+  - pip install coveralls
+  - coverage run --source=protector setup.py test && coveralls
