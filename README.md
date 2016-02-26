@@ -2,7 +2,7 @@
 
 # Protector
 
-A circuit breaker for Time Series Databases
+A circuit breaker for Time Series Databases like InfluxDB
 
 ## Introduction
 
