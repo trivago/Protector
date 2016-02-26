@@ -3,6 +3,7 @@
 # Protector
 
 [![Build Status](https://travis-ci.org/trivago/Protector.svg?branch=master)](https://travis-ci.org/trivago/Protector)
+[![Coverage Status](https://coveralls.io/repos/github/trivago/Protector/badge.svg?branch=master)](https://coveralls.io/github/trivago/Protector?branch=master)
 
 
 A circuit breaker for Time Series Databases like InfluxDB
