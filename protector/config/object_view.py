@@ -16,5 +16,3 @@ class ObjectView(object):
             key = "{}:".format(k)
             output.append("{:<15}{}".format(key, v))
         return "\n".join(output)
-
-

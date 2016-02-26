@@ -15,14 +15,14 @@ class TestParseList(unittest.TestCase):
         query = self.parser.parse('list series')
         self.assertEqual(query.get_type(), Keyword.LIST)
         self.assertEqual(query.series_stmt, '')
-        print query
+        print(query)
 
         query = self.parser.parse('list series /my_regex\.test/')
         self.assertEqual(query.get_type(), Keyword.LIST)
         self.assertEqual(query.series_stmt, '/my_regex\.test/')
-        print query
+        print(query)
 
         query = self.parser.parse('list series "my-awesome.series.name"')
         self.assertEqual(query.get_type(), Keyword.LIST)
         self.assertEqual(query.series_stmt, '"my-awesome.series.name"')
-        print query
+        print(query)

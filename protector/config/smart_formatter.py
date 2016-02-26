@@ -3,7 +3,7 @@ import argparse
 
 class SmartFormatter(argparse.HelpFormatter):
     """
-    A formatter for agrparse that allows to insert newline in the help text?
+    A formatter for agrparse that allows to insert newline in the help text
 
     Usage:
 
