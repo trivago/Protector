@@ -42,9 +42,9 @@ class TestParseTimeRange(unittest.TestCase):
                          [DateRange(now + timedelta(microseconds=100), now + timedelta(microseconds=100))])
         self.assertEqual(t.parse("time = now() - 100u"),
                          [DateRange(now - timedelta(microseconds=100), now - timedelta(microseconds=100))])
-        self.assertEqual(t.parse("time < '2013-08-13'"),
-                         [DateRange(epoch, datetime(2013, 8, 13))])
         self.assertEqual(t.parse("time < 2013-08-13"),
+                         [DateRange(epoch, datetime(2013, 8, 13))])
+        self.assertEqual(t.parse("time < '2013-08-13'"),
                          [DateRange(epoch, datetime(2013, 8, 13))])
         self.assertEqual(t.parse("time > '2013-08-12 23:32:01.232'"),
                          [DateRange(datetime(2013, 8, 12, 23, 32, 1, 232000), now)])
