@@ -34,7 +34,7 @@ class TestTooManyDatapoints(unittest.TestCase):
 
         self.assertTrue(self.too_many_datapoints.check(
                 self.parser.parse(
-                        "select * from /^myseries/ where value > -1 and time > now() - 1w GROUP by time(30s) limit 10")
+                        "select * from /^myseries/ where value > -1 and time > now() - 100w GROUP by time(30s) limit 10")
         ).is_ok())
 
         self.assertTrue(self.too_many_datapoints.check(
