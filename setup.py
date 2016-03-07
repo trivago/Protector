@@ -15,7 +15,6 @@ except(IOError, ImportError):
 
 requires = [
     "daemonocle",
-    "dateparser",
     "funcsigs",
     "httpretty",
     "jdatetime",

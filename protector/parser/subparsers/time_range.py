@@ -1,5 +1,4 @@
 import re
-import dateparser
 from datetime import datetime, timedelta
 
 from protector.influxdb.daterange import DateRange
@@ -99,7 +98,13 @@ class TimeRangeParser(object):
 
     @staticmethod
     def parse_date_time(match):
-        return dateparser.parse(match.group(1))
+        text = match.group(1)
+        for fmt in ('%Y-%m-%d', '%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f'):
+            try:
+                return datetime.strptime(text, fmt)
+            except ValueError:
+                pass
+        raise ValueError('No valid date format found')
 
     @staticmethod
     def parse_unix_time(match):
