@@ -25,6 +25,14 @@ class TestQueryForOldData(unittest.TestCase):
                     "select * from 'myseries' where time > now() - {}".format(small_timedelta))
             ).is_ok())
 
+        self.assertTrue(self.query_old_data.check(
+            self.parser.parse('select * from "myseries" limit 1000')
+        ).is_ok())
+
+        self.assertTrue(self.query_old_data.check(
+            self.parser.parse('select * from "myseries" LIMIT 1000')
+        ).is_ok())
+
     def test_multiple_timedeltas(self):
         self.assertTrue(self.query_old_data.check(
             self.parser.parse(

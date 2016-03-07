@@ -32,6 +32,9 @@ class RuleChecker(Rule):
         if earliest_date >= self.min_start_date:
             return Ok(True)
 
+        if query.limit_stmt:
+            return Ok(True)
+
         return Err(("Querying for data before {} is prohibited. "
                     "Your beginning date is {}, which is before that.").format(self.min_start_date.strftime("%Y-%m-%d"),
                                                                               earliest_date))
