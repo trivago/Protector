@@ -2,6 +2,8 @@
 
 ### master (unreleased)
 
+* Handle uppercase keywords properly
+
 
 ### v0.6.0 (2016/02/17)
 

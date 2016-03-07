@@ -45,6 +45,24 @@ class TestParseSelect(unittest.TestCase):
         self.assertEqual(query.datapoints, 10)
         self.assertEqual(query.get_earliest_date(), datetime.now() - timedelta(days=1))
 
+    def test_upper_lowercase_keywords(self):
+        queries = set()
+        queries.add(self.parser.parse("select value, test from /my.regex/ where time > now() - 24h limit 10"))
+        queries.add(self.parser.parse("SELECT value, test from /my.regex/ WHERE time > now() - 24h LIMIT 10"))
+        queries.add(self.parser.parse("select value, test from /my.regex/ WHERE time > now() - 24h LIMIT 10"))
+        queries.add(self.parser.parse("select value, test FROM /my.regex/ WHERE time > now() - 24h limit 10"))
+
+        for query in queries:
+            self.assertEqual(query.get_type(), Keyword.SELECT)
+            self.assertEqual(query.select_stmt, "value, test")
+            self.assertEqual(query.from_stmt, "/my.regex/")
+            self.assertEqual(query.where_stmt, "time > now() - 24h")
+            self.assertEqual(query.limit_stmt, '10')
+            self.assertIsNone(query.group_by_stmt)
+            self.assertEqual(query.resolution, self.default_resolution)
+            self.assertEqual(query.datapoints, 10)
+            self.assertEqual(query.get_earliest_date(), datetime.now() - timedelta(days=1))
+
     def test_group_by(self):
         """
         Test SELECT queries with group by statement

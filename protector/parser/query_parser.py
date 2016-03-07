@@ -47,6 +47,7 @@ class QueryParser(object):
 
         query_string = self._cleanup(raw_query_string)
         parts = self._split(query_string)
+        parts = self._sanitize_keywords(parts)
         tokens = self._tokenize(parts)
 
         if tokens:
@@ -76,6 +77,17 @@ class QueryParser(object):
         :param query: A sanitized query string
         """
         return [word.strip() for word in query.split(' ')]
+
+    def _sanitize_keywords(self, parts):
+        output = []
+        for part in parts:
+            if part.lower() in self.keywords:
+                # Make all keywords lowercase
+                output.append(part.lower())
+            else:
+                # Keep casing for everything else
+                output.append(part)
+        return output
 
     def _tokenize(self, parts):
         current_keyword = None
